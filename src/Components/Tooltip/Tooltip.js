@@ -1,4 +1,4 @@
-import styles from './Tooltip.module.css'; // Import your CSS file for styling
+import styles from './Tooltip.module.css'; // Import CSS file for styling
 
 const Tooltip = ({ position, text, children }) => {
   // Create a dynamic positioning class based on the "position" prop
