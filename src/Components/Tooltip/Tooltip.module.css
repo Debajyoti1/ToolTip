@@ -1,40 +1,45 @@
+/* Styles for the tooltip container */
 .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted rgb(247, 215, 8);
-  }
-  
- .tooltiptext {
-    visibility: hidden;
-    width: 180px;
-    background-color: rgb(255, 158, 1);
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+  position: relative; /* Positioning the tooltip container relative to its parent */
+  display: inline-block; /* Display the tooltip as an inline block element */
+  border-bottom: 1px dotted rgb(247, 215, 8); /* Adding a dotted underline effect */
+}
 
-    position: absolute;
-    z-index: 1;
+/* Styles for the tooltip text */
+.tooltiptext {
+  visibility: hidden; /* Initially hiding the tooltip text */
+  width: 180px; /* Setting a fixed width for the tooltip */
+  background-color: rgb(255, 158, 1); /* Background color of the tooltip */
+  color: #fff; /* Text color of the tooltip */
+  text-align: center; /* Center-aligning the text within the tooltip */
+  border-radius: 6px; /* Adding rounded corners to the tooltip */
+  padding: 5px 0; /* Adding padding to the tooltip */
 
-  }
-  .top{
-    bottom: 120%;
-    left: 50%;
-    margin-left: -90px;
-  }
-  .right{
-    top: 5px;
-    left: 110%;
-  }
-  .left{
-    top: 5px;
-    right: 110%;
-  }
-  .bottom{
-    top: 120%;
-    left: 50%;
-    margin-left: -90px;
-  }
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+  position: absolute; /* Positioning the tooltip absolutely within its parent */
+  z-index: 1; /* Ensuring the tooltip appears above other content */
+}
+
+/* Styles for different tooltip positions */
+.top {
+  bottom: 120%; /* Position the top tooltip below its parent element */
+  left: 50%; /* Center-aligning the tooltip horizontally */
+  margin-left: -90px; /* Adjusting the left margin to center-align the tooltip */
+}
+.right {
+  top: 5px; /* Position the right tooltip at the top of its parent element */
+  left: 110%; /* Position the right tooltip to the right of its parent element */
+}
+.left {
+  top: 5px; /* Position the left tooltip at the top of its parent element */
+  right: 110%; /* Position the left tooltip to the left of its parent element */
+}
+.bottom {
+  top: 120%; /* Position the bottom tooltip above its parent element */
+  left: 50%; /* Center-aligning the tooltip horizontally */
+  margin-left: -90px; /* Adjusting the left margin to center-align the tooltip */
+}
+
+/* Show the tooltip text when hovering over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible; /* Make the tooltip text visible on hover */
+}
