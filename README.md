@@ -1,3 +1,35 @@
+## Album App created using React
+
+### Folder structure
+```
+│   .gitignore
+│   package-lock.json
+│   package.json
+│   README.md
+│
+├───public
+│       favicon.ico
+│       index.html
+│       logo192.png
+│       logo512.png
+│       manifest.json
+│       robots.txt
+│
+└───src
+    │   App.css
+    │   App.js
+    │   App.test.js
+    │   index.css
+    │   index.js
+    │   reportWebVitals.js
+    │   setupTests.js
+    │
+    └───Components
+        └───Tooltip
+                Tooltip.js
+                Tooltip.module.css
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
